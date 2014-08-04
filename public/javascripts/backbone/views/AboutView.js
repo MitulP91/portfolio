@@ -1,14 +1,18 @@
 PortfolioApp.Views.AboutView = Backbone.View.extend({
   el: '#app',
   initialize: function() {
-
+    $(window).on('resize', this.resizeFunction);
   },
   template: _.template(
     '<div id="about" class="large_panel">' +
       '<div class="panel_content">' +
-        '<h2 class="about_text">' +
-          '<span class="important">Hello.</span> My name is <span class="important">Mitul Patel.</span><br/> I am a web developer based in NYC. <br/>I like fun projects. </br>I like challenging projects. <br/>Check me out.' +
-        '</h2>' +
+        '<div class="about_text_container">' +
+          '<h2 class="about_text">Hello. My name is Mitul Patel.</h2>' +
+          '<h2 class="about_text">I am a web developer based in NYC.</h2>' +
+          '<h2 class="about_text">I like fun <a class="about_link" href="/projects" data-backbone="true">projects</a>.</h2>' +
+          '<h2 class="about_text">I like challenging <a class="about_link" href="/projects" data-backbone="true">projects</a>.</h2>' +
+          '<h2 class="about_text"><a class="about_link" href="/resume" data-backbone="true">Check me out</a>.</h2>' +
+        '</div>' +
       '</div>' +
     '</div>'
   ),

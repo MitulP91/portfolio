@@ -12,9 +12,11 @@ PortfolioApp.AppRouter = Backbone.Router.extend({
     this.renderView(aboutView);
   },
   renderView: function(view) {
+    // Close the nav
     $('.nav_menu_open').removeClass('nav_menu_open');
-    var $large_panel = $('.large_panel');
 
+    // Fade current content out and then fade new content in
+    var $large_panel = $('.large_panel');
     if($large_panel.length > 0) {
       $large_panel.animate({
         opacity: 0

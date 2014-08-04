@@ -6,7 +6,7 @@ var PortfolioApp = PortfolioApp || new (Backbone.View.extend({
   events: {
     'click .overlay': 'closeNav',
     'click .hamburger_nav': 'openNav',
-    'click a': 'clickLink'
+    'click a[data-backbone="true"]': 'clickLink'
   },
   template: _.template(
     '<nav id="nav_menu">' +
@@ -14,15 +14,15 @@ var PortfolioApp = PortfolioApp || new (Backbone.View.extend({
         '<span></span>' +
       '</a>' +
       '<ul id="link_list">' +
-        '<li class="link"><a href="/">Home</a></li>' +
-        '<li class="link"><a href="/about">About</a></li>' +
-        '<li class="link"><a href="/projects">Projects</a></li>' +
-        '<li class="link"><a href="/resume">Resume</a></li>' +
-        '<li class="link"><a href="/contact">Contact</a></li>' +
+        '<li class="link"><a data-backbone="true" href="/">Home</a></li>' +
+        '<li class="link"><a data-backbone="true" href="/about">About</a></li>' +
+        '<li class="link"><a data-backbone="true" href="/projects">Projects</a></li>' +
+        '<li class="link"><a data-backbone="true" href="/resume">Resume</a></li>' +
+        '<li class="link"><a data-backbone="true" href="/contact">Contact</a></li>' +
       '</ul>' +
       '<ul id="social_list">' +
-        '<li class="social"><a href="#"><i class="fa fa-twitter"></i></a></li>' +
-        '<li class="social"><a href="#"><i class="fa fa-github-alt"></i></a></li>' +
+        '<li class="social"><a href="http://twitter.com/mitulp91" target="_blank"><i class="fa fa-twitter"></i></a></li>' +
+        '<li class="social"><a href="http://github.com/mitulp91" target="_blank"><i class="fa fa-github-alt"></i></a></li>' +
       '</ul>' +
       '<div class="overlay"></div>' +
     '</nav>' +

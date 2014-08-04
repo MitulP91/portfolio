@@ -4,17 +4,17 @@ PortfolioApp.Views.HomeView = Backbone.View.extend({
     $(window).on('resize', this.resizeFunction);
   },
   events: {
-    'click a': 'clickLink'
+    'click a[data-backbone="true"]': 'clickLink'
   },
   template: _.template(
     '<div id="home" class="large_panel">' +
       '<div class="panel_content">' +
         '<h1 id="my_name">Mitul Patel</h1>' +
         '<ul id="options_list">' +
-          '<li class="option"><a href="/about"><i class="fa fa-male icon"></i></a></li>' +
-          '<li class="option"><a href="/projects"><i class="fa fa-folder icon"></i></a></li>' +
-          '<li class="option"><a href="/resume"><i class="fa fa-cloud-upload icon"></i></a></li>' +
-          '<li class="option"><a href="/contact"><i class="fa fa-phone icon"></i></a></li>' +
+          '<li class="option"><a data-backbone="true" href="/about"><i class="fa fa-male icon"></i></a></li>' +
+          '<li class="option"><a data-backbone="true" href="/projects"><i class="fa fa-folder icon"></i></a></li>' +
+          '<li class="option"><a data-backbone="true" href="/resume"><i class="fa fa-cloud-upload icon"></i></a></li>' +
+          '<li class="option"><a data-backbone="true" href="/contact"><i class="fa fa-phone icon"></i></a></li>' +
         '</ul>' +
       '</div>' +
     '</div>'
