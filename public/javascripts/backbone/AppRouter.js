@@ -1,7 +1,8 @@
 PortfolioApp.AppRouter = Backbone.Router.extend({
   routes: {
-    '': 'index',
-    'about(/)': 'about'
+    '(/)': 'index',
+    'about(/)': 'about',
+    'resume(/)': 'resume'
   },
   index: function() {
     var homeView = new PortfolioApp.Views.HomeView();
@@ -10,6 +11,10 @@ PortfolioApp.AppRouter = Backbone.Router.extend({
   about: function() {
     var aboutView = new PortfolioApp.Views.AboutView();
     this.renderView(aboutView);
+  },
+  resume: function() {
+    var resumeView = new PortfolioApp.Views.ResumeView();
+    this.renderView(resumeView);
   },
   renderView: function(view) {
     // Close the nav

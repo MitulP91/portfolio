@@ -22,6 +22,7 @@ var PortfolioApp = PortfolioApp || new (Backbone.View.extend({
       '</ul>' +
       '<ul id="social_list">' +
         '<li class="social"><a href="http://twitter.com/mitulp91" target="_blank"><i class="fa fa-twitter"></i></a></li>' +
+        '<li class="social"><a href="https://www.linkedin.com/in/mitulp91/" target="_blank"><i class="fa fa-linkedin"></i></a></li>' +
         '<li class="social"><a href="http://github.com/mitulp91" target="_blank"><i class="fa fa-github-alt"></i></a></li>' +
       '</ul>' +
       '<div class="overlay"></div>' +

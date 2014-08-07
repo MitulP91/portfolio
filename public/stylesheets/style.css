@@ -2,9 +2,14 @@
 /*** General ***/
 /***************/
 html, body {
-  font: 100% helvetica, 'Helvetica Neue', arial, sans-serif;
+  font: 100% 'Oswald', helvetica, 'Helvetica Neue', arial, sans-serif;
   height: 100%;
   width: 100%;
+  color: #FFF;
+}
+
+ul {
+  -webkit-padding-start: 0;
 }
 
 li {
@@ -60,6 +65,7 @@ a:visited {
   -webkit-transition: border-width 0.3s, background-color 0.3s, height 0s 0.3s;
   transition: border-width 0.3s, background-color 0.3s, height 0s 0.3s;
   z-index: 1501;
+  box-sizing: border-box;
 }
 
 #nav_menu.nav_menu_open {
@@ -406,7 +412,7 @@ a:visited {
 
 /******************/
 /*** About View ***/
-/**********&*******/
+/******************/
 .about_text {
   color: #FFF;
   font-size: 3.5rem;
@@ -436,6 +442,182 @@ a:visited {
   transition: border 0.3s, color 0.3s;
 }
 
+
+/*******************/
+/*** Resume View ***/
+/*******************/
+#resume {
+  text-align: left;
+}
+
+#resume.large_panel {
+  top: -2%;
+  overflow: scroll;
+}
+
+#resume .panel_content {
+  position: static;
+  top: 0;
+  left: 0;
+  margin: 0;
+}
+
+#top_resume_panel {
+  width: 100%;
+}
+
+#resume_name {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+#caption {
+  margin-top: 0;
+}
+
+#contact_list li {
+  height: 30px;
+  line-height: 30px;
+  font-family: 'Vollkorn', serif;
+  width: 35%;
+  float: left;
+  font-size: 18px;
+}
+
+#contact_list li a {
+  color: #FFF;
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+#contact_list li a:hover {
+  color: rgba(0,0,0,0.3);
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+#contact_list i {
+  font-size: 18px;
+}
+
+.contact_icon {
+  width: 50px;
+}
+
+.resume_panel {
+  float: left;
+}
+
+#left_resume_panel {
+  width: 60%;
+}
+
+#right_resume_panel {
+  width: 35%;
+  margin-left: 5%;
+}
+
+.resume_title {
+  font-size: 1.2rem;
+  color: #E9E9E9;
+}
+
+.experience_container {
+  font-family: 'Vollkorn', serif;
+  color: #E9E9E9;
+}
+
+.experience_title, .project_title {
+  color: #FFF;
+  font-size: 1.1rem;
+  font-family: 'Oswald', sans-serif;
+  margin-bottom: 0;
+}
+
+.project_title a {
+  color: #FFF;
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.project_title a:hover {
+  color: rgba(0,0,0,0.3);
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.experience_title span {
+  font-family: 'Vollkorn', serif;
+}
+
+.separator {
+  margin: 0 5px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.experience_position {
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.experience_timeline {
+  font-size: 0.9rem;
+  margin-top: 0;
+}
+
+.experience_bullets {
+  color: #FFF;
+}
+
+.experience_bullets li {
+  display: list-item;
+  list-style: disc outside none;
+  margin-left: 20px;
+}
+
+.project_description {
+  font-family: 'Vollkorn', serif;
+  font-size: 1rem;
+}
+
+.project_title .project_visit {
+  font-family: 'Vollkorn', serif;
+  color: #E9E9E9;
+  font-size: 0.9rem;
+  float: right;
+  margin-right: 20px;
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.project_visit:hover {
+  color: rgba(0,0,0,0.3);
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.skill_title {
+  font-size: 1.1rem;
+  margin-bottom: 0;
+}
+
+.skill_container {
+  margin-top: 0;
+  font-family: 'Vollkorn', serif;
+  font-size: 1rem;
+}
+
+
+/*********************/
+/*** Media Queries ***/
+/*********************/
 @media only screen and (max-width: 1198px) {
   .about_text_container {
     width: 90%;

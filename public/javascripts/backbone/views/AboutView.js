@@ -1,7 +1,7 @@
 PortfolioApp.Views.AboutView = Backbone.View.extend({
   el: '#app',
   initialize: function() {
-    $(window).on('resize', this.resizeFunction);
+    $(window).on('resize', this.resizeFunction)
   },
   template: _.template(
     '<div id="about" class="large_panel">' +
